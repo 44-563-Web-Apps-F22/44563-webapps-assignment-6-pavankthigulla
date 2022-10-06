@@ -36,6 +36,29 @@
            document.getElementById("output").innerHTML="correct "+correct+"  wrong "+wrong;
         }
 </script>
-
+<div class="container">
+    <img id="picture" src="Greenfly.jpg" height="100" weight="100" onclick="swapImage()">
+</div>
+<script>
+    var useImage=1
+    var img=document.getElementById("picture")
+    function swapImage(){
+        switch(useImage){
+            case 1:
+                img.src="horse-fly.jpg"
+                useImage++
+                break
+            case 2:
+                img.src="locusts.jpg"
+                useImage++
+                break
+            case 3:
+                img.src="Greenfly.jpg"
+                useImage=1
+                break
+            default:
+        }
+    }
+</script>
 </body>
 </html> 
